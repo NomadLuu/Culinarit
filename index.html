@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="icon" href="culinary.png" >
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinarit</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Culinar<span class="span"></span><span class="span">it</span></h1>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link"><span class="span">Inicio</span></a>
+            <a href="carrera/conocenos.html" class="nav-link">Conócenos</a>
+            <a href="login.html" class="nav-link">Iniciar Sesión</a>
+        </nav>
+
+    </header>
+    <div class="Hall" >       
+        <h2 class="midText"> Conoce el poder de <br> <span class="typed"></span></h2>
+        <div clas="culi" id="cadenas-texto">
+            <p><span class="span">Los alimentos</span></p>
+            <p><span class="span">La cocina</span></p>
+            <p><span class="span">La IA</span></p>
+        </div>
+        <div class="culinar">
+            <img src="culinary.png">
+        </div>
+    </div>
+    <footer>
+        <div class="footer1">
+            <p>Aplicación web de Nutrición <span></span></p>
+
+        </div>
+        <div class="footer2">
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p>©2024 Culinarit | Todos los derechos reservados</p>
+    </footer>
+    <div class="mnnav">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+       <a><i class="fa-solid fa-right-to-bracket"></i></a>
+        <a href="carrera/conocenos.html"><i class="fa-solid fa-question"></i></a>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("bajar", window.scrollY > 0);
+        })
+    </script>
+<script src="https://kit.fontawesome.com/b3460c5420.js" crossorigin="anonymous"></script>
+<script src="typed.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voficce</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1><span class="span"></span><span class="span"> V</span>office</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link"><span class="span">Inicio</span></a>
+            <a href="carrera/carrera.html" class="nav-link">Actividades</a>
+            <a href="calendar/Calendario.html" class="nav-link">Calendario</a>
+            <a href="login.html" class="nav-link">Cerrar Seisión</a>
+        </nav>
+
+    </header>
+    <div class="Hall" >
+        <h2 class="midText"><span class="typed"></span></h2>
+        <div id="cadenas-texto">
+            <p>Bienvenida <span class="span">Marsito</span></p>
+            <p>Administra y mejora tu <span class="span">tiempo</span></p>
+            <p>Administra y mejora tu <span class="span">vida</span></p>
+            <p>Administra y mejora tu <span class="span">rendimiento</span></p>
+
+        </div>
+    </div>
+    <section class="soy">
+        <div class="soy1">
+                   <h2>Hola, <span class="span">Marsito</span></h2> 
+                   <img class="yo" src="yo.jpeg">
+        </div>
+        <div class="soy2">
+            <p>Estamos encantados de tenerte de vuelta. Esperamos que hayas tenido una excelente semana laboral. A continuación, te proporcionamos un resumen de tu rendimiento durante la última semana: </p>
+            <p><span class="span indicadores">Productividad:</span> Tu índice de productividad se mantuvo sólido, cumpliendo con los objetivos establecidos.<br>
+                <span class="span indicadores">Colaboración:</span> Destacaste en la colaboración, contribuyendo de manera significativa en los proyectos de equipo.<br>
+                <span class="span indicadores   ">Puntualidad:</span> Mantuviste una excelente asistencia y cumpliste con los plazos establecidos.
+               </p>
+                <p>Según las canciones que haz escuchado durante tu productividad te recomendamos:</p>
+                <div class="canciones">
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/UVST.jpg">
+                        <p>Moscow Mule<br>Bad Bunny</p>
+
+                    </div>
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/Huracan.jpg">
+                        <p>Mírame Ma<br>Rels B</p>
+
+                    </div>
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/Starboy.jpg">
+                        <p>Die For You<br>The Weeknd</p>
+
+                    </div>
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/Glimpse.png">
+                        <p>Glimpse of Us<br>Joji</p>
+
+                    </div>                                         
+                </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer1">
+            <p>Aplicación web de productividad <span></span></p>
+        </div>
+        <div class="footer2">
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p>©2023 Voffice | Todos los derechos reservados</p>
+
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("bajar", window.scrollY > 0);
+        })
+    </script>
+<script src="https://kit.fontawesome.com/b3460c5420.js" crossorigin="anonymous"></script>
+<script src="typed.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

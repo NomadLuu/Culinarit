@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stilo2.css">
+    <link rel="stylesheet" href="../normalize.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voffice</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <h1><span class="span"></span><span class="span"> V</span>office</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html" class="nav-link">Inicio</a>
+            <a href="../carrera/carrera.html" class="nav-link"><span class="span">Actividades</span></a>
+            <a href="" class="nav-link">Calendario</a>
+            <a href="../login.html" class="nav-link">Cerrar Seisión</a>
+        </nav>
+
+    </header>
+    <div class="Hall2" >
+        <h2 class="midText"><span class="typed"></span></h2>
+        <div id="cadenas-texto">
+            <p>Revisa tus actividades<span class="span"> Pendientes</span> </p>
+            <p>Revisa tus actividades<span class="span"> Terminadas</span> </p>
+            
+        </div>
+    </div>
+    <div class="tl">
+       <h2>Lista de Pendientes Asignados</h2> 
+    </div>
+    
+    <form class="todo">
+        <fieldset class="todo-list">
+
+          <label class="todo-list__label">
+            <input type="checkbox" name="" id="" />
+            <i class="check"></i>
+            <span> Junta</span>
+          </label>
+          <label class="todo-list__label">
+            <input type="checkbox" name="" id="" />
+            <i class="check"></i>
+            <span> Tarea laboratorio</span>
+          </label>
+          <label class="todo-list__label">
+            <input type="checkbox" name="" id="" />
+            <i class="check"></i>
+            <span> Terminar diseños web</span>
+          </label>
+          <label class="todo-list__label">
+            <input type="checkbox" name="" id="" />
+            <i class="check"></i>
+            <span> Hacer reportes</span>
+          </label>
+        </fieldset>
+        <div class="eval">
+            <img class="portadas" src="graph.png">
+        </div>
+      </form>
+      <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer1">
+            <p>Aplicación web de productividad <span></span></p>
+        </div>
+        <div class="footer2">
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com/luarcora/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/Luis.C.T.A.M/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/LuuWithHoodie"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p>©2023 Voffice | Todos los derechos reservados</p>
+
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("bajar", window.scrollY > 0);
+        })
+        
+    </script>
+<script src="https://kit.fontawesome.com/b3460c5420.js" crossorigin="anonymous"></script>
+<script src="../typed.js"></script>
+<script src="../main.js"></script>
+</body>
+
+</html>

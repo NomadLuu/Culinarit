@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voficce</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1><span class="span"></span><span class="span"> V</span>office</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link"><span class="span">Inicio</span></a>
+            <a href="carrera/carrera.html" class="nav-link">Actividades</a>
+            <a href="" class="nav-link">Calendario</a>
+            <a href="login.html" class="nav-link">Cerrar Seisión</a>
+        </nav>
+
+    </header>
+    <div class="Hall" >
+        <img src="calendar.jpg">
+
+    </div>
+
+   
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer1">
+            <p>Aplicación web de productividad <span></span></p>
+        </div>
+        <div class="footer2">
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p>©2023 Voffice | Todos los derechos reservados</p>
+
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("bajar", window.scrollY > 0);
+        })
+    </script>
+<script src="https://kit.fontawesome.com/b3460c5420.js" crossorigin="anonymous"></script>
+
+<script src="../main.js"></script>
+</body>
+
+</html>

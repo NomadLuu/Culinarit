@@ -1,0 +1,355 @@
+
+:root{
+    --Text:#000;
+    --Especial: rgb(33, 172, 114);;
+}
+body {
+    font-family: 'Poppins';font-size: 18px;
+    background-color: var(--Text);
+}
+.tl{
+    width: 100%;
+    color: #fff;
+    text-align: left ;
+    padding: 0px 75px 10px 30px;
+}
+
+header{
+    transition: 0.7s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    min-height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: center;
+    z-index: 10;
+}
+.logo{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+
+}
+.yo{
+    max-width: 800px;
+    border-radius: 10px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+
+}
+nav{
+    padding: 0px 30px;
+}
+a:hover{
+    color: var(--Especial);
+    position: relative;
+    bottom:2px ;
+}
+nav a{
+    padding: 0px 10px;
+}
+.midText{
+    color: #fff;
+    display: inline;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+
+.Hall2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(carrera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+h1{
+    font-weight: 400;
+}
+header.bajar{
+    background-color: #000;
+    padding: 15px 20px;
+}
+.trayectoria{
+    text-align: justify;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 0px 40px;
+}
+.soy2{
+    margin-left: 20px;
+}
+footer{
+    margin-top: 20vh;
+    background-color:var(--Especial);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation:animateWave 6s linear infinite ;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 15px;
+    animation:animateWave_02 6s linear infinite ;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0;
+    animation:animateWave 4s linear infinite ;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 20px;
+    animation:animateWave_02 4s linear infinite ;
+}
+.footer1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer2{
+    width: 100%;
+    flex-direction: row;
+}
+.social_icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+i{
+    font-size: 2rem;
+    margin: 0 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.span{
+    color: var(--Especial);
+}
+.todo{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width:950px){
+    .todo{
+        flex-direction: column;
+    }
+}
+@media (max-width:780px){
+    header{
+        flex-direction: column;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    header.bajar{
+        padding-left: 0px;
+    }
+    nav{
+        padding-bottom: 15px;
+    }
+    .soy1{
+        text-align: center;
+
+    }
+    .soy2{
+        text-align: center;
+    }
+
+    .yo{
+        max-width: 450px;
+        width: auto;
+        height: auto;
+    }
+    img{
+        max-width: 100vw;
+    }
+    .todo{
+        flex-direction: column;
+    }
+    .tl{
+        text-align: center;
+    }
+
+}
+@media (max-width:450px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding-bottom: 15px;
+    }
+    .soy1{
+        text-align: center;
+
+    }
+    .soy2{
+        text-align: center;
+    }
+
+    .yo{
+        max-width: 300px;
+        width: auto;
+        height: auto;
+    }
+    img{
+        max-width: 100vw;
+    }
+    .tl{
+        width: 100%;
+        color: #fff;
+        text-align: center ;
+        padding: 0px 75px 10px 30px;
+    }
+
+}
+
+@media (max-width:1475px){
+    .yo{
+        width: auto;
+    }
+    .trayectoria{
+        flex-direction: column;
+    }
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x:1000px;
+    }
+    100%{
+        background-position-x:0px ;
+    }
+}
+@keyframes animateWave_02{
+    0%{
+        background-position-x:0px;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 75px 10px 30px;
+  width: 45%;
+  background: #000000;
+  border: transparent;
+}
+.todo-list .todo-list__title {
+  padding: 3px 6px;
+  color: #f1faee;
+  background-color: #000000;
+}
+.todo-list .todo-list__label {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  font-size: 24px;
+  font-family: Lato, sans-serif;
+  color: #f1faee;
+  cursor: pointer;
+}
+.todo-list .todo-list__label input[type=checkbox] {
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.todo-list .todo-list__label input[type=checkbox] + .check {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f1faee;
+  transition: 0.2s;
+}
+.todo-list .todo-list__label input[type=checkbox]:checked + .check {
+  width: 25px;
+  height: 15px;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+}
+.todo-list .todo-list__label input[type=checkbox] ~ span {
+  position: relative;
+  left: 40px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.eval{
+    display: flex;
+    
+    object-fit: cover;
+}
+.eval img{
+    object-fit: cover;
+}
+.todo-list .todo-list__label input[type=checkbox] ~ span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #f1faee;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.todo-list .todo-list__label input[type=checkbox]:checked ~ span {
+  color: #585b57;
+}
+.todo-list .todo-list__label input[type=checkbox]:checked ~ span::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
