@@ -5,7 +5,8 @@
 }
 body {
     font-family: 'Montserrat';font-size: 18px;
-    background-color: var(--Text);
+    background-color: var(--bg);
+    height: 100vh;
 }
 
 .Log{
@@ -15,18 +16,35 @@ body {
     border-radius: 10px 10px;
     justify-content: center;
     width: 100%;
-    height: 1000px;
-    margin-top: -100px;
+    height: auto;
+    
+
 }
 .caja{
     padding: 0;
     flex-direction: column;
     background-color: #fff;
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 25px;
     height: 500px;
 justify-content: center;
+}
+.ico{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.we{
+    margin-top: 20px;
+    background-image: url(ONDA.png);
+    background-position: 75% 35%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    left: 0;
+    padding-bottom: 20px;
 }
 .mnnav{
     display: none;
@@ -46,7 +64,7 @@ justify-content: center;
     border-style: none;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
     box-sizing: border-box;
-    color: #166e16;
+    color: #c44c34;
     cursor: pointer;
     display: inline-flex;
     fill: currentcolor;
@@ -85,7 +103,7 @@ justify-content: center;
   
   .button-17:focus {
     outline: none;
-    border: 2px solid #48f442;
+    border: 2px solid var(--bg);
   }
   
   .button-17:not(:disabled) {
@@ -110,11 +128,10 @@ justify-content: center;
 .correo{
     display: flex;
     align-items: center;
-    text-align: left;
     flex-direction: column;
 }
 input{
-    width: 303px;
+    width: 65%;
 }
 header{
     transition: 0.7s;
@@ -170,8 +187,7 @@ nav a{
 .case{
     border-radius: 10px;
     padding-left: 10px;
-    border: 1px solid #166e16;
-    
+    border: 1px solid #c76223;
     outline: none;
 }
 .Hall{
@@ -324,8 +340,25 @@ i{
 .span{
     color: var(--Especial);
 }
-
+footer a:hover{
+    color: var(--bg);
+}
 @media (max-width:780px){
+    .we{
+        margin-top: 0px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .ico{
+    }
+    .Log{
+        margin-top: 0;
+        width: 100%;
+    }
+    .caja{
+        width: 80%;
+    }
     header{
         flex-direction: column-reverse;
         margin-left: 0px;
@@ -355,9 +388,7 @@ i{
         flex-direction: column;
         background-position:center;
     }
-    .caja{
-        width: 100%;
-    }
+ 
     .yo{
         width: auto;
         height: auto;
@@ -376,7 +407,6 @@ i{
         width: auto;
     }
     .case{
-        width: auto;
     }
 
 }
@@ -409,6 +439,20 @@ i{
     100%{
         background-position-x:1000px ;
     }
+}
+@media (max-width:420px){
+    .we{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:376px){
+    .we{
+        margin-top: 120px;
+    }
+}
+footer{
+    text-align: center;
 }
 .logo{
     color: #fff;

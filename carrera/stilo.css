@@ -116,6 +116,9 @@ justify-content: center;
 input{
     width: 303px;
 }
+footer a:hover{
+    color: var(--bg);
+}
 .we{
     display: flex;
     height: 100%;
