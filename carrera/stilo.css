@@ -142,6 +142,9 @@ footer a:hover{
     justify-content: center;
     color: #fff;
 }
+footer{
+    text-align: center;
+}
 .mision{
     background-color:var(--bg);
 }
