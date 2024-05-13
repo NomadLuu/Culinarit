@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stilo2.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes somos?</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Culinar<span class="span"></span><span class="span">it</span></h1>
+            </a>
+        </div>
+        <nav>
+            <a href="../user.html" class="nav-link">Inicio</a>
+            <a href="carrera/conocenos.html" class="nav-link">Chat</a>
+            <a href="Repositorio/Repositorio.html" class="nav-link"><span class="span">Recetario</span></a>
+            <a href="../login.html" class="nav-link">Cerrar Sesión</a>
+
+        </nav>
+
+    </header>
+    <div class="Hall" >
+        
+        <div class="archivero">
+            <div class="he"> 
+                <input class="place" type="text" placeholder="Escribe tu pregunta" id="prompt">
+                <button class="boton" id="generate">Generar</button>
+            </div>
+           
+            <div class="cajon">
+                <span class="typed"></span>
+                <div clas="" id="cadenas-texto">
+                    <p class="output"></p>
+   
+                </div>
+            </div>
+            
+            
+            
+
+        </div>
+
+    </div>
+
+   
+    <footer>
+        <div class="footer1">
+            <p>Aplicación web de Nutrición <span></span></p>
+
+        </div>
+        <div class="footer2">
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p>©2024 Culinarit | Todos los derechos reservados</p>
+    </footer>
+
+    <div class="mnnav">
+        <a href="../Repositorio/Repositorio.html"><i class="fa-solid fa-book"></i></i></a>
+       <a href=""><i class="fa-solid fa-comment"></i></i></a>
+       <a href="../user.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i></i></a>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("bajar", window.scrollY > 0);
+        })
+    </script>
+<script src="https://kit.fontawesome.com/b3460c5420.js" crossorigin="anonymous"></script>
+<script src="appG.js"></script>
+<script src="../typed.js"></script>
+<script src="main2.js"></script>
+
+</body>
+
+</html>
