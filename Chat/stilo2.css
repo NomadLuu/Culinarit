@@ -177,6 +177,10 @@ justify-content: center;
     }
     .place:focus{
         border-color: var(--bg);
+        
+    }
+    .place:active{
+        border-color: var(--bg); 
     }
 .boton{
     border-radius: 20px;
@@ -184,11 +188,11 @@ justify-content: center;
     color: var(--Especial);
     padding: 5px;
     border: none;
-    transition: .7s;
+    transition: .4s ease-in-out;
 }
 .boton:hover{
     border: #e28418;
-
+    color: #e28418;
 }
 header{
     transition: 0.7s;
