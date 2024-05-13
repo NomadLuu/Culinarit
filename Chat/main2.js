@@ -4,7 +4,7 @@ const typed = new Typed('.typed',{
     backSpeed:75,
     startDelay:300,
     smartBackspace:true,
-    loop:false,
+    loop:true,
     loopCount:false,
     showCursor:true,
     cursorChar:'|',
