@@ -1,7 +1,7 @@
 :root{
     --Text:#000;
     --Especial: rgba(51,34,25,255);
-    --bg:#e28418;
+    --bg:#c79950;
 }
 body {
     font-family: 'Montserrat';font-size: 18px;

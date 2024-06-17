@@ -1,7 +1,7 @@
 :root{
     --Text:#000;
     --Especial: rgba(51,34,25,255);
-    --bg:#e28418;
+    --bg:#c79950;
 }
 body {
     font-family: 'Montserrat';font-size: 18px;
@@ -198,7 +198,7 @@ nav a{
     height: 100vh;
     opacity: 100%;
     background-image: url(ONDA.png);
-    background-color: #e28418;
+    background-color:var(--bg);
     background-size: cover;
     background-repeat: no-repeat;
     
